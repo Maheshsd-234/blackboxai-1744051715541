@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Use Cases - BlockHealth</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        h1, h2, h3 {
+            font-family: 'Poppins', sans-serif;
+        }
+        .usecase-card:hover .usecase-icon {
+            transform: scale(1.1);
+            background-color: #3b82f6;
+            color: white;
+        }
+        .emergency-bg {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://images.pexels.com/photos/4386467/pexels-photo-4386467.jpeg');
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-md sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <div class="flex-shrink-0 flex items-center">
+                        <i class="fas fa-shield-alt text-blue-600 text-2xl mr-2"></i>
+                        <a href="index.html" class="text-xl font-bold text-gray-900">BlockHealth</a>
+                    </div>
+                </div>
+                <div class="hidden md:ml-6 md:flex md:items-center md:space-x-8">
+                    <a href="problem.html" class="text-gray-500 hover:text-blue-600 px-3 py-2 text-sm font-medium">The Problem</a>
+                    <a href="solution.html" class="text-gray-500 hover:text-blue-600 px-3 py-2 text-sm font-medium">Our Solution</a>
+                    <a href="usecases.html" class="text-blue-600 px-3 py-2 text-sm font-medium">Use Cases</a>
+                    <a href="techstack.html" class="text-gray-500 hover:text-blue-600 px-3 py-2 text-sm font-medium">Tech Stack</a>
+                </div>
+                <div class="-mr-2 flex items-center md:hidden">
+                    <button type="button" class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-blue-500" aria-controls="mobile-menu" aria-expanded="false">
+                        <span class="sr-only">Open main menu</span>
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="relative bg-blue-700 overflow-hidden">
+        <div class="max-w-7xl mx-auto">
+            <div class="relative z-10 pb-8 bg-blue-700 sm:pb-16 md:pb-20 lg:max-w-2xl lg:w-full lg:pb-28 xl:pb-32">
+                <div class="pt-10 sm:pt-16 lg:pt-8 lg:pb-14 lg:overflow-hidden">
+                    <div class="mt-10 mx-auto max-w-7xl px-4 sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 xl:mt-28">
+                        <div class="sm:text-center lg:text-left">
+                            <h1 class="text-4xl tracking-tight font-extrabold text-white sm:text-5xl md:text-6xl">
+                                <span class="block">Real-World</span>
+                                <span class="block text-blue-200">Applications</span>
+                            </h1>
+                            <p class="mt-3 text-base text-blue-100 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
+                                See how BlockHealth solves critical healthcare challenges.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
+            <img class="h-56 w-full object-cover sm:h-72 md:h-96 lg:w-full lg:h-full" src="https://images.pexels.com/photos/4225920/pexels-photo-4225920.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Doctor reviewing medical records">
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="py-12 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="lg:text-center">
+                <h2 class="text-base text-blue-600 font-semibold tracking-wide uppercase">Scenarios</h2>
+                <h1 class="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
+                    BlockHealth in Action
+                </h1>
+                <p class="mt-4 max-w-2xl text-xl text-gray-500 lg:mx-auto">
+                    Practical applications that demonstrate the platform's value across healthcare situations.
+                </p>
+            </div>
+
+            <!-- Use Case Cards -->
+            <div class="mt-10">
+                <div class="grid grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-2">
+                    <!-- Use Case 1 -->
+                    <div class="usecase-card bg-white rounded-xl shadow-md overflow-hidden transition-all duration-300 hover:shadow-xl">
+                        <div class="p-6">
+                            <div class="flex items-center">
+                                <div class="usecase-icon flex-shrink-0 bg-blue-100 rounded-md p-3 transition-all duration-300">
+                                    <i class="fas fa-user-md text-blue-600 text-xl"></i>
+                                </div>
+                                <div class="ml-5">
+                                    <h3 class="text-xl font-bold text-gray-900">New Doctor Visit</h3>
+                                </div>
+                            </div>
+                            <div class="mt-4">
+                                <p class="text-gray-600">
+                                    Visiting a new specialist? Grant them temporary access to your complete medical history with one click.
+                                </p>
+                                <div class="mt-4 bg-gray-50 p-4 rounded-lg">
+                                    <p class="text-sm font-medium text-gray-900">How BlockHealth Helps:</p>
+                                    <ul class="mt-2 space-y-1 text-sm text-gray-600">
+                                        <li class="flex items-start">
+                                            <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                                            <span>No need to fill out lengthy medical history forms</span>
+                                        </li>
+                                        <li class="flex items-start">
+                                            <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                                            <span>Doctor sees verified records, not patient recollections</span>
+                                        </li>
+                                        <li class="flex items-start">
+                                            <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                                            <span>Access automatically expires after visit</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Use Case 2 -->
+                    <div class="usecase-card bg-white rounded-xl shadow-md overflow-hidden transition-all duration-300 hover:shadow-xl">
+                        <div class="p-6">
+                            <div class="flex items-center">
+                                <div class="usecase-icon flex-shrink-0 bg-blue-100 rounded-md p-3 transition-all duration-300">
+                                    <i class="fas fa-stethoscope text-blue-600 text-xl"></i>
+                                </div>
+                                <div class="ml-5">
+                                    <h3 class="text-xl font-bold text-gray-900">Second Opinion</h3>
+                                </div>
+                            </div>
+                            <div class="mt-4">
+                                <p class="text-gray-600">
+                                    Seeking a second opinion from a specialist? Share your scans and test results securely.
+                                </p>
+                                <div class="mt-4 bg-gray-50 p-4 rounded-lg">
+                                    <p class="text-sm font-medium text-gray-900">How BlockHealth Helps:</p>
+                                    <ul class="mt-2 space-y-1 text-sm text-gray-600">
+                                        <li class="flex items-start">
+                                            <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                                            <span>No need to physically transfer files or CDs</span>
+                                        </li>
+                                        <li class="flex items-start">
+                                            <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                                            <span>Specialist can view original, unaltered reports</span>
+                                        </li>
+                                        <li class="flex items-start">
+                                            <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                                            <span>Revoke access when consultation is complete</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Use Case 3 -->
+                    <div class="usecase-card bg-white rounded-xl shadow-md overflow-hidden transition-all duration-300 hover:shadow-xl">
+                        <div class="p-6">
+                            <div class="flex items-center">
+                                <div class="usecase-icon flex-shrink-0 bg-blue-100 rounded-md p-3 transition-all duration-300">
+                                    <i class="fas fa-globe-americas text-blue-600 text-xl"></i>
+                                </div>
+                                <div class="ml-5">
+                                    <h3 class="text-xl font-bold text-gray-900">Global Telemedicine</h3>
+                                </div>
+                            </div>
+                            <div class="mt-4">
+                                <p class="text-gray-600">
+                                    Consulting with doctors across borders? Share records internationally with no security risks.
+                                </p>
+                                <div class="mt-4 bg-gray-50 p-4 rounded-lg">
+                                    <p class="text-sm font-medium text-gray-900">How BlockHealth Helps:</p>
+                                    <ul class="mt-2 space-y-1 text-sm text-gray-600">
+                                        <li class="flex items-start">
+                                            <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                                            <span>No jurisdictional data transfer issues</span>
+                                        </li>
+                                        <li class="flex items-start">
+                                            <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                                            <span>Doctor can view but not download records</span>
+                                        </li>
+                                        <li class="flex items-start">
+                                            <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                                            <span>Automatic translation of standardized medical codes</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Use Case 4 -->
+                    <div class="usecase-card bg-white rounded-xl shadow-md overflow-hidden transition-all duration-300 hover:shadow-xl">
+                        <div class="p-6">
+                            <div class="flex items-center">
+                                <div class="usecase-icon flex-shrink-0 bg-blue-100 rounded-md p-3 transition-all duration-300">
+                                    <i class="fas fa-ambulance text-blue-600 text-xl"></i>
+                                </div>
+                                <div class="ml-5">
+                                    <h3 class="text-xl font-bold text-gray-900">Emergency Situation</h3>
+                                </div>
+                            </div>
+                            <div class="mt-4">
+                                <p class="text-gray-600">
+                                    Unconscious or unable to communicate? Paramedics can access critical information instantly.
+                                </p>
+                                <div class="mt-4 bg-gray-50 p-4 rounded-lg">
+                                    <p class="text-sm font-medium text-gray-900">How BlockHealth Helps:</p>
+                                    <ul class="mt-2 space-y-1 text-sm text-gray-600">
+                                        <li class="flex items-start">
+                                            <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                                            <span>Emergency toggle grants temporary access</span>
+                                        </li>
+                                        <li class="flex items-start">
+                                            <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                                            <span>Shows only critical info (allergies, medications, conditions)</span>
+                                        </li>
+                                        <li class="flex items-start">
+                                            <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                                            <span>Access logged and automatically revoked after crisis</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Emergency Access Section -->
+            <div class="mt-20 rounded-xl overflow-hidden shadow-xl">
+                <div class="emergency-bg text-white">
+                    <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8 lg:py-24">
+                        <div class="lg:grid lg:grid-cols-2 lg:gap-8 lg:items-center">
+                            <div>
+                                <h2 class="text-3xl font-extrabold text-white sm:text-4xl">
+                                    <span class="block">Emergency Access</span>
+                                    <span class="block text-blue-300">When Seconds Matter</span>
+                                </h2>
+                                <p class="mt-3 text-lg text-blue-100">
+                                    BlockHealth's emergency mode gives first responders instant access to critical health information while maintaining security.
+                                </p>
+                                <div class="mt-8">
+                                    <div class="inline-flex rounded-md shadow">
+                                        <a href="#" class="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-blue-700 bg-white hover:bg-blue-50">
+                                            Learn about emergency features
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mt-12 lg:mt-0">
+                                <div class="bg-white bg-opacity-10 rounded-lg p-6 backdrop-filter backdrop-blur-sm">
+                                    <h3 class="text-lg font-medium text-white">How It Works:</h3>
+                                    <ul class="mt-4 space-y-4">
+                                        <li class="flex items-start">
+                                            <div class="flex-shrink-0">
+                                                <i class="fas fa-qrcode text-blue-300"></i>
+                                            </div>
+                                            <p class="ml-3 text-blue-100">
+                                                <span class="font-medium text-white">QR Code</span> on phone/watch/ID card links to your profile
+                                            </p>
+                                        </li>
+                                        <li class="flex items-start">
+                                            <div class="flex-shrink-0">
+                                                <i class="fas fa-shield-alt text-blue-300"></i>
+                                            </div>
+                                            <p class="ml-3 text-blue-100">
+                                                <span class="font-medium text-white">Limited Access</span> shows only critical medical information
+                                            </p>
+                                        </li>
+                                        <li class="flex items-start">
+                                            <div class="flex-shrink-0">
+                                                <i class="fas fa-bell text-blue-300"></i>
+                                            </div>
+                                            <p class="ml-3 text-blue-100">
+                                                <span class="font-medium text-white">Notifications</span> alert you when emergency access is used
+                                            </p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Testimonials Section -->
+            <div class="mt-20">
+                <h2 class="text-3xl font-bold text-gray-900 text-center">What Healthcare Professionals Say</h2>
+                <div class="mt-12 grid grid-cols-1 gap-8 md:grid-cols-3">
+                    <!-- Testimonial 1 -->
+                    <div class="bg-white rounded-lg shadow-md p-6">
+                        <div class="flex items-center">
+                            <div class="flex-shrink-0">
+                                <img class="h-12 w-12 rounded-full" src="https://images.pexels.com/photos/4173251/pexels-photo-4173251.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Dr. Sarah Johnson">
+                            </div>
+                            <div class="ml-4">
+                                <h4 class="text-lg font-medium text-gray-900">Dr. Sarah Johnson</h4>
+                                <p class="text-sm text-gray-500">Cardiologist, Boston General</p>
+                            </div>
+                        </div>
+                        <div class="mt-4">
+                            <p class="text-gray-600 italic">
+                                "BlockHealth gives me confidence I'm seeing complete, unaltered medical histories. The access controls mean patients trust me with their data."
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial 2 -->
+                    <div class="bg-white rounded-lg shadow-md p-6">
+                        <div class="flex items-center">
+                            <div class="flex-shrink-0">
+                                <img class="h-12 w-12 rounded-full" src="https://images.pexels.com/photos/8373581/pexels-photo-8373581.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Nurse Mark Rodriguez">
+                            </div>
+                            <div class="ml-4">
+                                <h4 class="text-lg font-medium text-gray-900">Mark Rodriguez, RN</h4>
+                                <p class="text-sm text-gray-500">Emergency Nurse, Chicago</p>
+                            </div>
+                        </div>
+                        <div class="mt-4">
+                            <p class="text-gray-600 italic">
+                                "In emergencies, BlockHealth's QR code system gives us instant access to allergies and medications without compromising patient privacy."
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial 3 -->
+                    <div class="bg-white rounded-lg shadow-md p-6">
+                        <div class="flex items-center">
+                            <div class="flex-shrink-0">
+                                <img class="h-12 w-12 rounded-full" src="https://images.pexels.com/photos/5327656/pexels-photo-5327656.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Dr. Priya Patel">
+                            </div>
+                            <div class="ml-4">
+                                <h4 class="text-lg font-medium text-gray-900">Dr. Priya Patel</h4>
+                                <p class="text-sm text-gray-500">Telemedicine Specialist</p>
+                            </div>
+                        </div>
+                        <div class="mt-4">
+                            <p class="text-gray-600 italic">
+                                "For international second opinions, BlockHealth eliminates the security concerns of emailing medical records across borders."
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800">
+        <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
+            <div class="xl:grid xl:grid-cols-3 xl:gap-8">
+                <div class="space-y-8 xl:col-span-1">
+                    <div class="flex items-center">
+                        <i class="fas fa-shield-alt text-blue-400 text-2xl mr-2"></i>
+                        <span class="text-xl font-bold text-white">BlockHealth</span>
+                    </div>
+                    <p class="text-gray-300 text-base">
+                        Revolutionizing health record management using blockchain technology.
+                    </p>
+                    <div class="flex space-x-6">
+                        <a href="#" class="text-gray-400 hover:text-white">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="mt-12 grid grid-cols-2 gap-8 xl:mt-0 xl:col-span-2">
+                    <div class="md:grid md:grid-cols-2 md:gap-8">
+                        <div>
+                            <h3 class="text-sm font-semibold text-gray-300 tracking-wider uppercase">
+                                Product
+                            </h3>
+                            <ul class="mt-4 space-y-4">
+                                <li>
+                                    <a href="solution.html" class="text-base text-gray-400 hover:text-white">
+                                        Features
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="usecases.html" class="text-base text-gray-400 hover:text-white">
+                                        Use Cases
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="techstack.html" class="text-base text-gray-400 hover:text-white">
+                                        Technology
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="mt-12 md:mt-0">
+                            <h3 class="text-sm font-semibold text-gray-300 tracking-wider uppercase">
+                                Company
+                            </h3>
+                            <ul class="mt-4 space-y-4">
+                                <li>
+                                    <a href="#" class="text-base text-gray-400 hover:text-white">
+                                        About
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="text-base text-gray-400 hover:text-white">
+                                        Team
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="text-base text-gray-400 hover:text-white">
+                                        Contact
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-12 border-t border-gray-700 pt-8">
+                <p class="text-base text-gray-400 text-center">
+                    &copy; 2023 BlockHealth. All rights reserved.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const mobileMenuButton = document.querySelector('[aria-controls="mobile-menu"]');
+            mobileMenuButton.addEventListener('click', function() {
+                const expanded = this.getAttribute('aria-expanded') === 'true';
+                this.setAttribute('aria-expanded', !expanded);
+                // In a complete implementation, this would toggle a mobile menu
+            });
+        });
+    </script>
+</body>
+</html>
